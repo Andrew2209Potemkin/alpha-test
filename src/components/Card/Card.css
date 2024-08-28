@@ -1,0 +1,92 @@
+.element {
+  max-width: 282px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.element__delete-icon-btn {
+  width: 18px;
+  height: 19px;
+  background-image: url('../../images/element-delete-icon-btn.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: opacity .2s linear;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.element__delete-icon-btn:hover {
+  opacity: .6;
+}
+
+.element__image {
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+.element__title-zone {
+  max-width: 246px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 15px 25px 21px;
+}
+
+.element__title {
+  max-width: 190px;
+  width: 100%;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
+
+.element__like-zone {
+  max-width: 22px;
+}
+
+.element__like-icon-btn {
+  width: 22px;
+  height: 19px;
+  background-image: url('../../images/element-like-icon-image.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: opacity .2s linear;
+}
+
+.element__like-icon-btn:hover {
+  opacity: .5;
+}
+
+.element__like-icon-btn_active {
+  background-image: url('../../images/element-like-icon-active-image.svg');
+}
